@@ -13,10 +13,9 @@ use Twig\Environment;
 
 class accueil
 {
-    public function index(Environnement $twig)
+    public function index(Environment $twig)
     {
         $content = $twig->render('base.html.twig');
-
-    return new Response($content);
+        return new Response($content);
   }
 }
