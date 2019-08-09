@@ -6,8 +6,8 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-    {{ knp_menu_render('main') }}
-    {% block body %}{% endblock %}
+    {% block body %}    {{ knp_menu_render('main') }}
+    {% endblock %}
         {% block javascripts %}
 
         {% endblock %}
